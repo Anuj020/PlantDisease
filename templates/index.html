@@ -1,0 +1,31 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plant Disease Diagnosis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    </head>
+    
+    <body>
+        <h1>Plant Disease Diagnosis</h1>
+        
+        <form action="/" method="post" enctype="multipart/form-data">
+            
+            <h2>Upload a Plant Image for Diagnosis</h2>
+            <p>Select an image of the plant you want to diagnose:</p>
+            <input type="file" name="plantImage" accept="image/*" required>
+            <button type="submit">Diagnose</button>
+
+            
+        </form>
+        {% if prediction %}
+        <h2>Prediction Result:</h2>
+        <p>The predicted Disease is: {{prediction}}</p>
+        {% endif %}
+        <p>Note: Please ensure the image is clear and includes the affected parts of the plant for accurate diagnosis.</p>
+    </body>
+    
+    </html>
+    

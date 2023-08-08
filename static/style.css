@@ -1,0 +1,66 @@
+/* style.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Prediction result styles */
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+p {
+    color: #333;
+}
+
+/* Note styles */
+p {
+    margin-top: 20px;
+    color: #777;
+    font-size: 12px;
+    align-content: center;
+}
+
